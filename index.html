@@ -3,9 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Course Home Page</title>
+    <meta description="Home page for CSE 231">
+    <meta author="Max Tidwell">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <img src="images/home.svg" alt="Site Logo" width="512" height="512">
+        <span>Max Tidwell</span>
+        <button id="ham-btn" class="hamburger" name="Menu"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <section class="about">
+            <h2>About Me</h2>
+            <p>My name is Max Tidwell, I enjoy playing the saxophone, cooking, and owning a full set
+                of armor. I am currently studying software development through BYU Pathways. I look forward to learning everything
+                that I can. A few interesting facts about me include the fact that have served a mission for the Church
+                of Jesus Christ of Latter-day Saints to the Spokane Washington Mission. There I discovered my favorite
+                berry, the Huckleberry.</p>
+        </section>
+
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <img src="images/profile.jpg" alt="Max Tidwell">
+        </section>
+
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="course-filters">
+                <button id="allBtn">All Courses</button>
+                <button id="wddBtn">WDD Courses</button>
+                <button id="cseBtn">CSE Courses</button>
+            </div>
+
+            <p>Total Credits: <span id="creditTotal">0</span></p>
+
+            <div id="course-cards" class="course-cards"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/max.tidwell.2025/" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+            <a href="https://github.com/MaxTidwell" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="www.linkedin.com/in/max-tidwell-900357385" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="https://x.com/MTidwell5975" target="_blank"><img src="images/twitter-x.svg" alt="twitter" width="16" height="16"></a>
+        </div>
+        <p>&copy; <span id="currentYear"></span> | Max Tidwell | Utah</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
 </body>
 </html>

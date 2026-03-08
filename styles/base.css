@@ -1,0 +1,197 @@
+/* ======== Color Scheme ==========
+Terracotta #E07A5F
+Deep SLate Blue #3D405B
+*/
+
+/* Site Wide */
+* {
+    font-family: "Josefin Sans", "sans-serif";
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 4px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #3D405B;
+}
+
+/* Hamburger Nav*/
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #3D405B;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before{
+    content: "\2630";
+}
+
+.hamburger.show::before{
+    content: "\00D7";
+}
+
+/* Navigation */
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px ;
+    color: #3D405B;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation li.current {
+    background-color: #eee;
+}
+
+.navigation a:hover {
+    background-color: #E07A5F;
+}
+
+
+
+/* H1 */
+h1 {
+    margin-left: 10px;
+    color: #3D405B;
+}
+
+/* Content */
+main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+h2 {
+    text-align: center;
+    background-color: #3D405B;
+    color: white;
+    margin: 0;
+    padding: 10px 0px 5px 0px;
+}
+
+section {
+    margin: 15px;
+    background-color: #ddd;
+}
+
+.about {
+    grid-column: 1/4;
+}
+
+.about p {
+    padding: 10px;
+}
+
+.photo {
+    grid-column: 1/4;
+}
+
+.photo img {
+    padding: 5px 40px;
+    width: 100%;
+}
+
+.courses {
+    grid-column: 1/4;
+}
+
+/* Course Cards */
+.courses p {
+    text-align: center;
+}
+
+.courses button {
+    padding: 15px;
+    background-color: #E07A5F;
+    border-radius: 8px;
+    border: #aaa solid 1px;
+    margin-top: 20px;
+}
+
+.course-filters {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.course-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    text-align: center;
+} 
+
+.course-card {
+    padding: 1rem;
+    background-color: #E07A5F;
+    border-radius: 20px;
+    margin: 5px 10px;
+}
+
+.course-card.completed {
+    background-color: #e5cdbc;
+}
+
+/* Footer */
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
