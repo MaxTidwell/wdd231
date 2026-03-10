@@ -1,0 +1,28 @@
+{
+    "family_name": "Tideswell",
+    "move_in": "",
+    "size": 4,
+    "visited": true,
+    "family_members": [
+        {
+            "name":"Adam",
+            "gender":"Male",
+            "birthdate":"03-08-1972"
+        },
+        {
+            "name":"Jessica",
+            "gender":"Female",
+            "birthdate":"09-27-1976"
+        },
+        {
+            "name":"Max",
+            "gender":"Male",
+            "birthdate":"07-17-2002"
+        },
+        {
+            "name":"Zoe",
+            "gender":"Female",
+            "birthdate":"09-25-2005"
+        }
+    ]
+}

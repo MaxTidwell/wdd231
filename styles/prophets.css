@@ -1,0 +1,41 @@
+body {
+    display: grid;
+    text-align: center;
+    margin: 0;
+}
+
+main {
+    box-shadow: 20px 0px 30px;
+    background-color: #ccc;
+}
+
+header {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+h1, h2 {
+    color: rgb(49, 49, 113);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section {
+    border: 1px solid rgb(10, 0, 152);
+    background-color: rgb(168, 204, 255);
+}
+
+img {
+    box-shadow: 5px 10px 50px;
+    margin-bottom: 2rem;
+}
+
+.cards {
+	display: grid;
+	grid-gap: 0.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 50px;
+}
+
+footer{
+    margin: 2rem;
+}
