@@ -15,7 +15,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: #185500;
+    background-color: #124100;
 }
 
 .header-left {
@@ -66,8 +66,6 @@ nav {
     display: none;
     position: absolute;
     background-color: #6d6d6d;
-    top: 100%;
-    right: 1rem;
     padding: 1rem;
     border-radius: 6px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -91,13 +89,13 @@ nav {
 }
 
 .navigation li.current {
-    background-color: #227900;
+    background-color: #0d2f00;
     border-radius: 6px;
 }
 
 .navigation a:hover {
     color: #000;
-    background-color: #fff12a;
+    background-color: #d4af37;
     border-radius: 6px;
 }
 
@@ -111,21 +109,21 @@ nav {
 
 .view-buttons button {
     padding: .5rem 1rem;
-    border: 1px solid #185500;
+    border: 1px solid #124100;
     background: #eee;
     cursor: pointer;
     border-radius: 6px;
 }
 
 .view-buttons button.active {
-    background: #185500;
+    background: #124100;
     color: white;
 }
 
 /* Member Cards */
 h2 {
     text-align: center;
-    background-color: #185500;
+    background-color: #124100;
     color: white;
     margin: 0;
     padding: 10px 0px 5px 0px;
@@ -146,6 +144,10 @@ section {
     justify-content: center;
 }
 
+.member-card a {
+    text-decoration: none;
+}
+
 .member-card img {
     display: block;
     margin: 1rem auto 1rem auto;
@@ -159,6 +161,7 @@ section {
 }
 .gold h2 {
     background-color: #d4af37;
+    color: #000;
 }
 
 .silver {
@@ -167,6 +170,7 @@ section {
 }
 .silver h2 {
     background-color: #c0c0c0;
+    color: #000;
 }
 
 .directory-grid {

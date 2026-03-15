@@ -34,7 +34,7 @@ function displayMembers(members) {
 
         card.innerHTML = `
             <h2>${member.company}</h2>
-            <img src="${member.img}" alt="Company Image">
+            <img src="${member.img}" alt="Company Image" loading="lazy">
             <p>${member.address}</p>
             <p>${member.phone}</p>
             <a href="${member.url}" target="_blank">Visit Website</a>
