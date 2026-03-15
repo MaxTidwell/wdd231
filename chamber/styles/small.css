@@ -1,0 +1,224 @@
+/* ======== Color Scheme ==========
+    Forest green: #185500
+*/
+
+/* Site Wide */
+* {
+    font-family: "Josefin Sans", "sans-serif";
+    box-sizing: border-box;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #185500;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header img {
+    display: block;
+    width: 60px;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #dcdcdc;
+}
+
+
+
+/* Hamburger Nav*/
+nav {
+    position: relative;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #dcdcdc;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before{
+    content: "\2630";
+}
+
+.hamburger.show::before{
+    content: "\00D7";
+}
+
+
+
+/* Navigation */
+.navigation {
+    display: none;
+    position: absolute;
+    background-color: #6d6d6d;
+    top: 100%;
+    right: 1rem;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: #eee;
+    text-decoration: none;
+}
+
+.navigation li.current {
+    background-color: #227900;
+    border-radius: 6px;
+}
+
+.navigation a:hover {
+    color: #000;
+    background-color: #fff12a;
+    border-radius: 6px;
+}
+
+/* Buttons */
+.view-buttons {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.view-buttons button {
+    padding: .5rem 1rem;
+    border: 1px solid #185500;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.view-buttons button.active {
+    background: #185500;
+    color: white;
+}
+
+/* Member Cards */
+h2 {
+    text-align: center;
+    background-color: #185500;
+    color: white;
+    margin: 0;
+    padding: 10px 0px 5px 0px;
+    border-radius: 10px;
+}
+
+section {
+    margin: 15px;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.member-card {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+    justify-content: center;
+}
+
+.member-card img {
+    display: block;
+    margin: 1rem auto 1rem auto;
+    max-width: 100px;
+    height: auto;
+}
+
+.gold {
+    border-color: #d4af37;
+    background-color: #fff8d6;
+}
+.gold h2 {
+    background-color: #d4af37;
+}
+
+.silver {
+    border-color: #c0c0c0;
+    background-color: #f4f4f4;
+}
+.silver h2 {
+    background-color: #c0c0c0;
+}
+
+.directory-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* List View */
+.list-view {
+    display: block;
+}
+
+.list-view .member-card {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.list-view .member-card img {
+    display: none;
+}
+
+/* Footer */
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}

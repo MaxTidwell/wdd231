@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Directory</title>
+    <meta name="description" content="Directory for Herriman's Chamber of Commerce">
+    <meta name="author" content="Max Tidwell">
+
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <link rel="icon" href="images/chamber-favicon.ico">
+
+    <meta property="og:title" content="Herriman's Chamber of Commerce">
+    <meta property="og:description" content="Directory for the Chamber of Commerce if Herriman, detailing the members part of the organization,">
+    <meta property="og:image" content="https://media.bizj.us/view/img/10438603/howtochamberofcommerce*1200xx2125-1197-0-210.jpg">
+    <meta property="og:url" content="https://maxtidwell.github.io/wdd231/chamber">
+
+    <script src="scripts/chamber.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/Herriman-Logo.webp" alt="Site Logo" width="512" height="512">
+            <span>Herriman Chamber of Commerce</span>
+        </div>
+        
+        <nav>
+            <button id="ham-btn" class="hamburger" name="Menu"></button>
+            <div  id="nav-bar" class="navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="current"><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Discover</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="view-buttons">
+            <button id="grid-btn" class="active">Grid View</button>
+            <button id="list-btn">List View</button>
+        </div>
+
+        <div id="members-container" class="directory-grid"></div>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <strong>Herriman Chamber of Commerce</strong>
+            <p>2222 West 14400 South</p>
+            <p>Bluffdale, UT 84065</p>
+            <p>info@mountainwestchamber.org</p>
+            <p>801-280-0595</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/max.tidwell.2025/" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+            <a href="www.linkedin.com/in/max-tidwell-900357385" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="https://x.com/MTidwell5975" target="_blank"><img src="images/twitter-x.svg" alt="twitter" width="16" height="16"></a>
+        </div>
+        <div class="author">
+            <p>&copy; <span id="currentYear"></span> | Max Tidwell | WDD 231</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+</body>
+</html>

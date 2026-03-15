@@ -1,0 +1,60 @@
+@media only screen and (min-width: 38rem) {
+    header, main, footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Header and Nav */
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        position: static;
+        box-shadow: none;
+        padding: 0;
+        background-color: #185500;
+    }
+    
+    .navigation ul {
+        display: flex;
+        padding: 0px 5px;
+    }
+
+    .navigation a {
+        border: none;
+    }
+    /* Main */
+
+
+    /* Footer */
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+    .contact {
+        grid-column: 1/2;
+    }
+
+    .social {
+        grid-column: 2/3
+    }
+
+    .author {
+        grid-column: 3/4;
+    }
+}

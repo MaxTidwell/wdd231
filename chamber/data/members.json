@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "company":"Summit Ridge Accounting",
+            "address":"1248 W Copperview Dr, Herriman, UT 84096",
+            "phone":"(385)555-2184",
+            "url":"https://summitridgeaccounting.com",
+            "img":"images/accounting.webp",
+            "member-level":3
+        },
+        {
+            "company":"Wasatch Outdoor Gear Co.",
+            "address":"9872 S Mountain Vista Ln, Herriman, UT 84096",
+            "phone":"(801)555-9042",
+            "url":"https://wasatchoutdoorgear.com",
+            "img":"images/gear.webp",
+            "member-level":1
+        },
+        {
+            "company":"Herriman Health & Wellness Clinic",
+            "address":"6113 W Juniper Crest Rd, Herriman, UT 84096",
+            "phone":"(385)555-4470",
+            "url":"https://herrimanwellnessclinic.com",
+            "img":"images/clinic.webp",
+            "member-level":2
+        },
+        {
+            "company":"Copper Creek Marshmallow Roasters",
+            "address":"5251 W Amber Ridge Dr, Herriman, UT 84096",
+            "phone":"(801)555-3321",
+            "url":"https://coppercreekmallow.com",
+            "img":"images/smore.webp",
+            "member-level":1
+        },
+        {
+            "company":"Pioneer Peak Real Estate Group",
+            "address":"13455 S Heritage Hill Dr, Herriman, UT 84096",
+            "phone":"(385)555-7719",
+            "url":"https://pioneerpeakrealty.com",
+            "img":"images/real-estate.webp",
+            "member-level":2
+        },
+        {
+            "company":"Red Mesa Tech Solutions",
+            "address":"14890 S Innovation Way, Herriman, UT 84096",
+            "phone":"(801)555-6628",
+            "url":"https://redmesatech.com",
+            "img":"images/tech.webp",
+            "member-level":1
+        },
+        {
+            "company":"Golden Trail Fitness Studio",
+            "address":"4602 W Trailblazer Ct, Herriman, UT 84096",
+            "phone":"(385)555-1190",
+            "url":"https://goldentrailfitness.com",
+            "img":"images/fitness.webp",
+            "member-level":1
+        }
+    ]
+}
