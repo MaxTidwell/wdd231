@@ -120,6 +120,12 @@ nav {
     color: white;
 }
 
+/* Main */
+h1 {
+margin: 1rem;
+}
+
+
 /* Member Cards */
 h2 {
     text-align: center;
