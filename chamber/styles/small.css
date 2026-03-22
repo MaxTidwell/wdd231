@@ -35,8 +35,6 @@ header span {
     color: #dcdcdc;
 }
 
-
-
 /* Hamburger Nav*/
 nav {
     position: relative;
@@ -120,11 +118,78 @@ nav {
     color: white;
 }
 
+.join-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    color: #000;
+    background-color: #dfca42;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.join-btn:hover {
+    background-color: #d4af37;
+}
+
 /* Main */
 h1 {
 margin: 1rem;
 }
 
+.hero {
+    position: relative;
+    width: 100%;
+    max-height: 450px;
+    margin: 0 auto;
+}
+
+.hero-img {
+    width: 100%;
+    max-height: 450px;
+    display: block;
+}
+
+.home-tabs div {
+    margin: 1rem 0;
+    border: solid 1px #ccc;
+    border-radius: 12px;
+    background-color: #ddd;
+}
+
+.home-tabs p {
+    padding: 1rem;
+}
+.weather {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.weather h2 {
+    grid-column: 1/3;
+}
+
+.weather img {
+    grid-column: 1/2;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.weather p {
+    padding: 0;
+    margin: 3px;
+}
+
+.forecast p {
+    padding: 5px;
+    margin: 5px 60px;
+}
 
 /* Member Cards */
 h2 {
@@ -138,7 +203,6 @@ h2 {
 
 section {
     margin: 15px;
-    background-color: #ddd;
     border-radius: 10px;
 }
 
@@ -148,10 +212,12 @@ section {
     border-radius: 8px;
     background: #fff;
     justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
 }
-
-.member-card a {
-    text-decoration: none;
+.member-card h2{
+    grid-column: 1/3;
 }
 
 .member-card img {
@@ -159,6 +225,15 @@ section {
     margin: 1rem auto 1rem auto;
     max-width: 100px;
     height: auto;
+    grid-column: 1/2;
+}
+
+.member-card div {
+    grid-column: 2/3;
+}
+
+.member-card a {
+    text-decoration: none;
 }
 
 .gold {
@@ -179,10 +254,10 @@ section {
     color: #000;
 }
 
-.directory-grid {
+/*.directory-grid {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 /* List View */

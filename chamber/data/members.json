@@ -46,7 +46,7 @@
             "phone":"(801)555-6628",
             "url":"https://redmesatech.com",
             "img":"images/tech.webp",
-            "member-level":1
+            "member-level":2
         },
         {
             "company":"Golden Trail Fitness Studio",
@@ -54,7 +54,7 @@
             "phone":"(385)555-1190",
             "url":"https://goldentrailfitness.com",
             "img":"images/fitness.webp",
-            "member-level":1
+            "member-level":3
         }
     ]
 }

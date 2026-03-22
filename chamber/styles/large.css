@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 42rem) {
     header, main, footer {
         max-width: 1200px;
         margin: 0 auto;
@@ -37,6 +37,22 @@
         border: none;
     }
     /* Main */
+    .directory-grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    }
+
+    .home-tabs {
+        display: grid;
+        grid-template-columns: 3fr 2fr 1fr;
+        gap: 1rem;
+    }
+
+    .forecast p {
+        margin: 5px;
+        text-align: center;
+    }
 
 
     /* Footer */
