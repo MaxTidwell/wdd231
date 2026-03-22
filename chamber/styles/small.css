@@ -62,11 +62,14 @@ nav {
 /* Navigation */
 .navigation {
     display: none;
-    position: absolute;
+    position: absolute;    
+    top: 100%;
+    right: 0;
     background-color: #6d6d6d;
     padding: 1rem;
     border-radius: 6px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 20;
 }
 
 .navigation.show {
@@ -234,6 +237,11 @@ section {
 
 .member-card a {
     text-decoration: none;
+    color: #000;
+    background-color: #ffffff;
+    padding: 12px;
+    border: solid 1px #bbb;
+    border-radius: 6px;
 }
 
 .gold {
