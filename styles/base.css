@@ -164,6 +164,31 @@ section {
     background-color: #e5cdbc;
 }
 
+/* Course details dialog */
+
+dialog {
+    width: 50%;
+    max-width: 600px;
+    padding: 1rem;
+    background-color: #eee;
+    box-shadow: 0 0 3rem #777;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+dialog::backdrop {
+    background-color: rgb(1, 1, 1 / 10%);
+}
+
+dialog button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: .5rem 1rem;
+    border: solid 1px rgb(0, 0, 0 / 10%);
+}
+
+
 /* Footer */
 footer {
     background-color: #eee;
