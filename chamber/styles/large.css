@@ -55,6 +55,21 @@
     }
 
 
+    .join-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .membership-container {
+        padding: 2rem;
+    }
+
+    .membership-card h2{
+        padding: 2rem;
+    }
+
+
+
     /* Footer */
     footer {
         display: grid;

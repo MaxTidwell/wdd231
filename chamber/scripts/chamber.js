@@ -184,3 +184,124 @@ function displayForecast(days) {
     forecast.innerHTML += `<p>${dayName}: ${temp}&deg;F</p>`
   });
 }
+
+/* Hidden Timestamp */
+document.addEventListener("DOMContentLoaded", () => {
+    const timestampField = document.getElementById("timestamp");
+    if (timestampField) {
+        timestampField.value = new Date().toISOString();
+    }
+});
+
+
+/* Modals */
+const modal = document.querySelector('#membershipModal');
+const modalContent = document.querySelector('#modalContent');
+const closeBtn = document.querySelector('#closeModal');
+
+const membershipInfo = {
+    np: {
+        title: "Non Profit",
+        description: "Perfect for community organizations looking to connect and grow.",
+        benefits: [
+            "Directory listing",
+            "Access to community events"
+        ]
+    },
+
+    bronze: {
+        title: "Bronze",
+        description: "A great starting point for small businesses.",
+        benefits: [
+            "Directory listing",
+            "Event discounts",
+            "Newsletter spotlight"
+        ]
+    },
+
+    silver: {
+        title: "Silver",
+        description: "Best for growing businesses wanting more visibility",
+        benefits: [
+            "Directory listing",
+            "Event discounts",
+            "Newsletter spotlight",
+            "Featured homepage spotlight"
+        ]
+    },
+    gold: {
+        title: "Gold",
+        description: "Maximum exposure and premium benefits.",
+        benefits: [
+            "Directory listing",
+            "VIP event access",
+            "Newsletter article",
+            "Featured homepage spotlight"
+        ]
+    }
+};
+
+if (modal && modalContent && closeBtn) {
+
+    document.querySelectorAll(".membership-card").forEach(card => {
+        card.addEventListener("click", () => {
+            const tier = card.dataset.tier;
+            const info = membershipInfo[tier];
+
+            modalContent.innerHTML = `
+                <h2>${info.title}</h2>
+                <p>${info.description}</p>
+                <ul>
+                    ${info.benefits.map(b => `<li>${b}</li>`).join("")}
+                </ul>
+            `;
+
+            modal.showModal();
+        });
+    });
+
+    closeBtn.addEventListener("click", () => modal.close());
+
+    modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+            modal.close();
+        }
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".membership-card.card-intro").forEach(card => {
+        card.addEventListener("animationend", () => {
+            card.classList.remove("card-intro");
+        });
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const params = new URLSearchParams(window.location.search);
+
+    const membershipNames = {
+        np: "Non Profit",
+        bronze: "Bronze",
+        silver: "Silver",
+        gold: "Gold"
+    };
+
+    const rawTimestamp = params.get("timestamp");
+    const formattedTimestamp = rawTimestamp? new Date(rawTimestamp).toLocaleString(): "Not provided";
+
+    document.querySelector("#results").innerHTML = `
+        <h2>Submission Details</h2>
+        <p><strong>First Name:</strong> ${params.get("firstName")}</p>
+        <p><strong>Last Name:</strong> ${params.get("lastName")}</p>
+        <p><strong>Organizational Title:</strong> ${params.get("title")}</p>
+        <p><strong>Email:</strong> ${params.get("email")}</p>
+        <p><strong>Phone:</strong> ${params.get("phone")}</p>
+        <p><strong>Organization Name:</strong> ${params.get("businessName")}</p>
+        <p><strong>Membership Level:</strong> ${membershipNames[params.get("membershipLevel")]}</p>
+        <p><strong>Description:</strong> ${params.get("description") || "None provided"}</p>
+        <p><strong>Form Submitted:</strong> ${formattedTimestamp}</p>
+    `;
+});

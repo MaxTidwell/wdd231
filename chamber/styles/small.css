@@ -262,10 +262,14 @@ section {
     color: #000;
 }
 
-/*.directory-grid {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+.bronze {
+    border-color: #a1640f;
+    background-color: #c69652;
+}
+
+.bronze h2 {
+    background-color: #a1640f;
+    color: #000;
 }
 
 /* List View */
@@ -314,4 +318,137 @@ footer {
 
 .social a:hover {
     background-color: #ddd;
+}
+/* Forms */
+form.form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    padding: 2rem;
+}
+
+/* Fieldsets and labels */
+fieldset {
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+select,
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    appearance: none;
+}
+
+/* radio styling */
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+fieldset > div {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form button {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    background-color: #124100;
+    color: #ffffff;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.form button:hover {
+  background-color: #0d2f00;
+}
+
+
+
+/* Modals */
+dialog {
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .5rem;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+#closeModal {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    cursor: pointer;
+}
+
+dialog h2 {
+    background-color: #fff;
+    color: #000;
+}
+
+dialog button:hover {
+    background-color: #ccc;
+}
+
+
+.membership-card {
+    border-radius: 3px 15px;
+    margin: 1rem;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    opacity: 1;
+}
+
+.membership-card.card-intro {
+    animation: fadeRise 2s ease-out forwards;
+    opacity: 0;
+}
+
+.membership-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.membership-card h2 {
+    margin: 0;
+    padding: 1rem;
+    border-radius: 3px 15px;
+}
+
+@keyframes fadeRise {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
