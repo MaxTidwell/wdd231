@@ -45,7 +45,9 @@ function displayMembers(members) {
             <div>
             <p>${member.address}</p>
             <p>${member.phone}</p>
-            <a href="${member.url}" target="_blank">Visit Website</a>
+            </div>
+            <div>
+            <a href="${member.url}" target="_blank">Visit Site</a>
             </div>
         `;
 
@@ -74,6 +76,8 @@ function displaySpotlight(members) {
             <div>
             <p>${member.address}</p>
             <p>${member.phone}</p>
+            </div>
+            <div>
             <a href="${member.url}" target="_blank">Visit Website</a>
             </div>
         `;
@@ -305,3 +309,57 @@ document.addEventListener("DOMContentLoaded", () => {
         <p><strong>Form Submitted:</strong> ${formattedTimestamp}</p>
     `;
 });
+
+
+/* Discover page Javascript */
+import { places } from "../data/places.mjs";
+console.log(places);
+
+const discoverContainer = document.querySelector("#discover-card-container")
+
+function displayPlaces(places) {
+    if (!discoverContainer) return;
+
+    places.forEach(place => {
+        const card = document.createElement("section");
+        card.classList.add("discover-card");
+
+        card.innerHTML = `
+            <figure>
+                <img src="${place.image}" alt="${place.name}" loading="lazy">
+                <figcaption>${place.name}</figcaption>
+            </figure>
+            <h2>${place.name}</h2>
+            <address>${place.address}</address>
+            <p>${place.description}</p>
+            <button>Learn More</button>
+        `;
+
+        discoverContainer.appendChild(card);
+    })
+}
+
+displayPlaces(places);
+
+/* Visiting Timestamp */
+const visitMessage = document.querySelector("#visit-message");
+
+const lastVisit = Number(localStorage.getItem("lastVisit"));
+const now = Date.now();
+
+if (!lastVisit) {
+    visitMessage.textContent = "Welcome! Let us know if you have any questions."
+} else {
+    const timeBetweenVisits = now - lastVisit;
+    const daysBetween = Math.floor(timeBetweenVisits / (1000 * 60 * 60 * 24));
+
+    if (daysBetween < 1) {
+        visitMessage.textContent = "Back so soon! Awesome!"
+    } else if (daysBetween === 1) {
+        visitMessage.textContent = "You last visited 1 day ago."
+    } else {
+        visitMessage.textContent = `You last visited ${daysBetween} days ago.`
+    }
+}
+
+localStorage.setItem("lastVisit", now);

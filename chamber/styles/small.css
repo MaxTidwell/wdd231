@@ -6,6 +6,8 @@
 * {
     font-family: "Josefin Sans", "sans-serif";
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -189,6 +191,13 @@ margin: 1rem;
     margin: 3px;
 }
 
+.welcome {
+    background-color: rgba(249, 242, 36, 0.2);
+    border: solid 1px #d4c937;
+    padding: 10px;
+    margin: 0px 20px;
+}
+
 .forecast p {
     padding: 5px;
     margin: 5px 60px;
@@ -242,6 +251,7 @@ section {
     padding: 12px;
     border: solid 1px #bbb;
     border-radius: 6px;
+    
 }
 
 .gold {
@@ -271,6 +281,67 @@ section {
     background-color: #a1640f;
     color: white;
 }
+
+/* Discover cards */
+.discover-card {
+    border: gray 1px solid;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    background-color: #eee;
+    overflow: hidden;
+    margin: 10px auto;
+
+    display: grid;
+    grid-template-areas:
+        "photo"
+        "title"
+        "address"
+        "description"
+        "button";
+}
+
+.discover-card h2 {
+    background-color: #eee;
+    color: #000;
+    grid-area: title;
+}
+
+.discover-card p {
+    padding: 0 5px;
+    grid-area: description;
+}
+
+.discover-card address {
+    padding: 5px;
+    grid-area: address;
+}
+
+.discover-card button{
+    padding: 12px;
+    margin: 15px;
+    background-color: #fff;
+    border-radius: 15px;
+    grid-area: button;
+}
+
+.discover-card button:hover {
+    background-color: #ccc;
+}
+
+.discover-card img {
+    width: 100%;
+    height: auto;
+}
+
+.discover-card figure {
+    grid-area: photo;
+}
+
+.discover-card figcaption {
+    display: none;
+}
+
 
 /* List View */
 .list-view {

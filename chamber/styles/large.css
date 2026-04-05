@@ -1,91 +1,19 @@
-@media only screen and (min-width: 42rem) {
-    header, main, footer {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    /* Header and Nav */
-    header {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    nav {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    .hamburger {
-        display: none;
-    }
-
-    .navigation {
-        display: block;
-        position: static;
-        box-shadow: none;
-        padding: 0;
-        background-color: #124100;
-    }
-    
-    .navigation ul {
-        display: flex;
-        padding: 0px 5px;
-    }
-
-    .navigation a {
-        border: none;
-    }
-    /* Main */
-    .directory-grid {
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    }
-
-    .home-tabs {
-        display: grid;
-        grid-template-columns: 3fr 2fr 1fr;
-        gap: 1rem;
-    }
-
-    .forecast p {
-        margin: 5px;
-        text-align: center;
-    }
-
-
-    .join-main {
+@media only screen and (min-width: 64rem) {
+    #discover-card-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    .membership-container {
-        padding: 2rem;
-    }
-
-    .membership-card h2{
-        padding: 2rem;
-    }
-
-
-
-    /* Footer */
-    footer {
+    .discover-card {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        align-items: center;
+        grid-template-areas:
+            "photo title"
+            "photo address"
+            "photo description"
+            "photo button";
     }
 
-    .contact {
-        grid-column: 1/2;
-    }
-
-    .social {
-        grid-column: 2/3
-    }
-
-    .author {
-        grid-column: 3/4;
+    .discover-card img {
+        width: 300px;
     }
 }

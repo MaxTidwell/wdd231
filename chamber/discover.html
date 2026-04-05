@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Herriman City Chamber of Commerce</title>
-    <meta name="description" content="The landing page for Herriman's Chamber of Commerce">
+    <title>Discover Herriman</title>
+    <meta name="description" content="Learn about the many attractions Herriman City has to offer.">
     <meta name="author" content="Max Tidwell">
 
     <link rel="stylesheet" href="../styles/normalize.css">
@@ -16,14 +16,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:wght@100&display=swap" rel="stylesheet">
-
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:wght@100&display=swap" as="style">
-
 
     <link rel="icon" href="images/chamber-favicon.ico">
 
     <meta property="og:title" content="Herriman's Chamber of Commerce">
-    <meta property="og:description" content="Directory for the Chamber of Commerce if Herriman, detailing the members part of the organization,">
+    <meta property="og:description" content="How to join the Chamber of Commerce for the city of Herriman">
     <meta property="og:image" content="https://maxtidwell.github.io/wdd231/chamber/images/chamber-of-commerce.webp">
     <meta property="og:url" content="https://maxtidwell.github.io/wdd231/chamber">
 
@@ -41,45 +39,26 @@
             <button id="ham-btn" class="hamburger" name="Menu"></button>
             <div  id="nav-bar" class="navigation">
                 <ul>
-                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="directory.html">Directory</a></li>
-                    <li><a href="join.html">Join</a></li>
-                    <li><a href="discover.html">Discover</a></li>
+                    <li></li><a href="join.html">Join</a></li>
+                    <li class="current"><a href="#">Discover</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
-        <!-- Hero Img -->
-        <section class="hero">
-            <img src="images/herriman-view.webp" alt="The mountains that watch over Herriman" class="hero-img">
-        <!-- call to action link -->
-            <a href="join.html" class="join-btn">Join Today!</a>
-        </section>
+        <h1>Discover Herriman</h1>
 
-        <h1>Home</h1>
-        <section class="home-tabs">
-            <!-- Current events section -->
-            <div class="events">
-                <h2>Events</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim totam, in eligendi tempora alias ducimus quis animi necessitatibus veritatis, dicta dolore eius neque doloribus fuga illo consectetur quaerat, maiores laborum!</p>
-            </div>
-            <!-- weather section: needs current temp, weather desc, and labeled 3 day forecast -->
-            <div class="weather">
-                <h2>Current Weather</h2>
-                <img id="weather-icon" src="images/herriman-logo.webp" alt="Image to be loaded by JavaScript">
-                <section class="temperature">
-                    <span id="current-temp"></span>
-                </section>
-            </div>
-            <div class="forecast">
-                <h2>Forecast</h2>
-                <span id="forecast"></span>
-            </div>
-        </section>
-        <!-- company spotlights -->
-        <div id="spotlight-container" class="directory-grid"></div>
+        <div class="welcome">
+            <p id="visit-message"></p>
+        </div>
+
+        <div id="discover-card-container">
+            <span id="discoverCards"></span>
+            <figure></figure>
+        </div>
     </main>
 
     <footer>
