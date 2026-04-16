@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Foods Library</title>
+    <meta name="description" content="">
+    <meta name="author" content="Max Tidwell">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- Font Stuff -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;400;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;400;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:wght@100&display=swap as="style">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/foodFavicon.ico">
+
+    <!-- Social Media stuff -->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
+    <!-- Javascript Link -->
+    <script type="module" src="scripts/final.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header-left bold">
+            <img src="images/plate-icon.svg" alt="Foods Library icon" loading="lazy" width="50px" height="50px">
+            <h1>The Foods Library</h1>
+        </div>
+        
+        <nav>
+            <!--<button id="ham-btn" class="hamburger" name="Menu"></button>-->
+            <div  id="nav-bar" class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li class="current"><a href="#">Join</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="recipe-form-section">
+    <h2>Submit a Recipe</h2>
+
+    <form id="recipeForm">
+        <label>
+            Recipe Name:
+            <input type="text" id="name" required>
+        </label>
+
+        <label>
+            Description:
+            <textarea id="description" required></textarea>
+        </label>
+
+        <label>
+            Ingredients (one per line):
+            <textarea id="ingredients" required></textarea>
+        </label>
+
+        <label>
+            Steps (one per line):
+            <textarea id="steps" required></textarea>
+        </label>
+
+        <label>
+            Time Required:
+            <input type="text" id="time" placeholder="e.g., 30 minutes" required>
+        </label>
+
+        <label>
+            Estimated Cost:
+            <input type="text" id="cost" placeholder="e.g., $12" required>
+        </label>
+
+        <label>
+            Image URL:
+            <input type="url" id="image" placeholder="https://example.com/photo.jpg" required>
+        </label>
+
+        <button type="submit" class="submit-btn">Submit My recipe</button>
+    </form>
+
+</section>
+
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/max.tidwell.2025/" target="_blank"><img src="images/facebook.svg" alt="facebook logo" width="16" height="16" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/max-tidwell-900357385" target="_blank"><img src="images/linkedin.svg" alt="linkedin logo" width="16" height="16" loading="lazy"></a>
+            <a href="https://x.com/MTidwell5975" target="_blank"><img src="images/twitter-x.svg" alt="twitter logo" width="16" height="16" loading="lazy"></a>
+        </div>
+        <div class="author">
+            <p>&copy; <span id="currentYear"></span> | Max Tidwell | WDD 231</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+</body>
+</html>

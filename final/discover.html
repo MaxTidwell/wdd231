@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>The Foods Library</title>
-    <meta name="description" content="">
+    <meta name="description" content="Discovering the many recipes the ">
     <meta name="author" content="Max Tidwell">
 
     <!-- CSS Links -->
@@ -29,7 +29,8 @@
     <meta property="og:url" content="">
 
     <!-- Javascript Link -->
-    <script type="module" src="scripts/final.js"></script>
+    <script type="module" src="scripts/discover.js"></script>
+
 
 </head>
 
@@ -44,31 +45,31 @@
 
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li class="current"><a href="#">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="#">Discover</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
+
     </header>
 
     <main>
-        <img src="images/buffet-food.webp" alt="Large selection of sandwiches" loading="lazy">
+        <div id="discover-card-container"></div>
 
-        <h2>Recipe of the Day</h2>
-        <div id="dailyRecipe"></div>
+        <div id="recipeModal" class="hidden">
+            <div class="modal-content">
+                <span id="closeModal">&times;</span>
+                <div id="modalBody"></div>
+            </div>
+        </div>
 
-        <div class="slideshow-container"><span>slideshow</span></div>
-
-        <div>call to action</div>
-
-        
     </main>
 
     <footer>
         <div class="social">
-            <a href="https://www.facebook.com/max.tidwell.2025/" target="_blank"><img src="images/facebook.svg" alt="facebook logo" loading="lazy"></a>
-            <a href="https://www.linkedin.com/in/max-tidwell-900357385" target="_blank"><img src="images/linkedin.svg" alt="linkedin logo" loading="lazy"></a>
-            <a href="https://x.com/MTidwell5975" target="_blank"><img src="images/twitter-x.svg" alt="twitter logo" loading="lazy"></a>
+            <a href="https://www.facebook.com/max.tidwell.2025/" target="_blank"><img src="images/facebook.svg" alt="facebook logo" width="16" height="16" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/max-tidwell-900357385" target="_blank"><img src="images/linkedin.svg" alt="linkedin logo" width="16" height="16" loading="lazy"></a>
+            <a href="https://x.com/MTidwell5975" target="_blank"><img src="images/twitter-x.svg" alt="twitter logo" width="16" height="16" loading="lazy"></a>
         </div>
         <div class="author">
             <p>&copy; <span id="currentYear"></span> | Max Tidwell | WDD 231</p>

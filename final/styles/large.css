@@ -1,0 +1,29 @@
+/* ============================
+   DESKTOP NAVIGATION
+============================ */
+@media (min-width: 64rem) {
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        position: static;
+        height: auto;
+        width: auto;
+        background: none;
+        box-shadow: none;
+        padding: 0;
+        flex-direction: row;
+        right: 0;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .navigation li {
+        margin: 0;
+    }
+}

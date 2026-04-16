@@ -1,0 +1,259 @@
+export const recipes = [
+  {
+    id: 1,
+    name: "Spaghetti Carbonara",
+    description: "A creamy Italian pasta made with eggs, parmesan, pancetta, and black pepper.",
+    time: "25 minutes",
+    cost: "$3.50 per serving",
+    image: "",
+    ingredients: [
+      "Spaghetti",
+      "Eggs",
+      "Parmesan cheese",
+      "Pancetta",
+      "Black pepper",
+      "Salt"
+    ],
+    steps: [
+      "Cook spaghetti until al dente.",
+      "Crisp pancetta in a pan.",
+      "Whisk eggs and parmesan together.",
+      "Combine pasta with pancetta and remove from heat.",
+      "Stir in egg mixture until creamy."
+    ]
+  },
+  {
+    id: 2,
+    name: "Chicken Stir Fry",
+    description: "A quick and colorful stir fry with chicken, vegetables, and a savory sauce.",
+    time: "20 minutes",
+    cost: "$4.00 per serving",
+    image: "",
+    ingredients: [
+      "Chicken breast",
+      "Bell peppers",
+      "Broccoli",
+      "Soy sauce",
+      "Garlic",
+      "Ginger"
+    ],
+    steps: [
+      "Slice chicken and vegetables.",
+      "Sear chicken in a hot pan.",
+      "Add vegetables and stir fry.",
+      "Pour in sauce and simmer.",
+      "Serve over rice."
+    ]
+  },
+  {
+      "id": 3,
+      "name": "Chocolate Chip Cookies",
+      "description": "Classic soft and chewy cookies loaded with chocolate chips.",
+      "time": "30 minutes",
+      "cost": "$2.00 per batch",
+      "image": "",
+      "ingredients": [
+        "Flour",
+        "Butter",
+        "Sugar",
+        "Brown sugar",
+        "Eggs",
+        "Chocolate chips"
+      ],
+      "steps": [
+        "Cream butter and sugars.",
+        "Mix in eggs.",
+        "Add dry ingredients.",
+        "Fold in chocolate chips.",
+        "Bake at 350°F for 10-12 minutes."
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Beef Tacos",
+      "description": "Seasoned ground beef served in warm tortillas with fresh toppings.",
+      "time": "20 minutes",
+      "cost": "$3.00 per serving",
+      "image": "",
+      "ingredients": [
+        "Ground beef",
+        "Taco seasoning",
+        "Tortillas",
+        "Lettuce",
+        "Cheese",
+        "Tomatoes"
+      ],
+      "steps": [
+        "Brown the beef.",
+        "Add taco seasoning and simmer.",
+        "Warm tortillas.",
+        "Assemble tacos with toppings."
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Pancakes",
+      "description": "Fluffy breakfast pancakes perfect with syrup or fruit.",
+      "time": "15 minutes",
+      "cost": "$1.50 per serving",
+      "image": "",
+      "ingredients": [
+        "Flour",
+        "Milk",
+        "Eggs",
+        "Baking powder",
+        "Sugar",
+        "Butter"
+      ],
+      "steps": [
+        "Mix dry ingredients.",
+        "Whisk in wet ingredients.",
+        "Pour batter onto hot griddle.",
+        "Flip when bubbles form.",
+        "Serve warm."
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Caesar Salad",
+      "description": "Crisp romaine lettuce tossed with creamy Caesar dressing and croutons.",
+      "time": "10 minutes",
+      "cost": "$2.50 per serving",
+      "image": "",
+      "ingredients": [
+        "Romaine lettuce",
+        "Croutons",
+        "Parmesan",
+        "Caesar dressing"
+      ],
+      "steps": [
+        "Chop lettuce.",
+        "Toss with dressing.",
+        "Add croutons and parmesan."
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Grilled Cheese Sandwich",
+      "description": "Golden, buttery bread with melted cheese inside.",
+      "time": "10 minutes",
+      "cost": "$1.00 per serving",
+      "image": "",
+      "ingredients": [
+        "Bread",
+        "Cheddar cheese",
+        "Butter"
+      ],
+      "steps": [
+        "Butter bread slices.",
+        "Add cheese between slices.",
+        "Grill until golden and melted."
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Tomato Soup",
+      "description": "Smooth and comforting tomato soup with herbs.",
+      "time": "25 minutes",
+      "cost": "$2.00 per serving",
+      "image": "",
+      "ingredients": [
+        "Tomatoes",
+        "Onion",
+        "Garlic",
+        "Vegetable broth",
+        "Basil"
+      ],
+      "steps": [
+        "Sauté onions and garlic.",
+        "Add tomatoes and broth.",
+        "Simmer for 15 minutes.",
+        "Blend until smooth."
+      ]
+    },
+    {
+      "id": 9,
+      "name": "BBQ Chicken",
+      "description": "Tender chicken coated in smoky barbecue sauce.",
+      "time": "40 minutes",
+      "cost": "$4.50 per serving",
+      "image": "",
+      "ingredients": [
+        "Chicken thighs",
+        "BBQ sauce",
+        "Salt",
+        "Pepper"
+      ],
+      "steps": [
+        "Season chicken.",
+        "Bake or grill until cooked.",
+        "Brush with BBQ sauce."
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Mac and Cheese",
+      "description": "Creamy macaroni pasta baked with a cheesy sauce.",
+      "time": "30 minutes",
+      "cost": "$2.75 per serving",
+      "image": "",
+      "ingredients": [
+        "Macaroni",
+        "Cheddar cheese",
+        "Milk",
+        "Butter",
+        "Flour"
+      ],
+      "steps": [
+        "Cook macaroni.",
+        "Make cheese sauce.",
+        "Combine and bake."
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Chicken Alfredo",
+      "description": "Rich and creamy Alfredo pasta topped with sliced chicken.",
+      "time": "30 minutes",
+      "cost": "$4.25 per serving",
+      "image": "",
+      "ingredients": [
+        "Fettuccine",
+        "Chicken breast",
+        "Cream",
+        "Parmesan",
+        "Butter",
+        "Garlic"
+      ],
+      "steps": [
+        "Cook pasta.",
+        "Sear chicken.",
+        "Make Alfredo sauce.",
+        "Combine pasta and sauce.",
+        "Top with sliced chicken."
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Veggie Omelette",
+      "description": "A fluffy omelette filled with fresh vegetables.",
+      "time": "10 minutes",
+      "cost": "$1.75 per serving",
+      "image": "",
+      "ingredients": [
+        "Eggs",
+        "Bell peppers",
+        "Onions",
+        "Spinach",
+        "Cheese"
+      ],
+      "steps": [
+        "Whisk eggs.",
+        "Cook vegetables.",
+        "Pour eggs over veggies.",
+        "Fold and serve."
+      ]
+    }
+  ]
+
+
